@@ -141,7 +141,7 @@ function putUserStoriesOnPage() {
 
           // <-----     ----->
 /******************************************************************************
- * Functionality for favorites list and starr/un-starr a story
+ * Functionality for favorites list and starr/un-star a story
  */
 
 /** Put favorites list on page. */
