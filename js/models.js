@@ -95,6 +95,7 @@ class StoryList {
     });
 
     const story = new Story(response.data.story);
+    // use unshift to add to beginning of array instead of at the end (push)
     this.stories.unshift(story);
     user.ownStories.unshift(story);
 
