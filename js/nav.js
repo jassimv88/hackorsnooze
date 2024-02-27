@@ -23,7 +23,8 @@ function navSubmitStoryClick(evt) {
   $submitForm.show();
 }
 
-$body.on("click", "#nav-submit-story", navSubmitStoryClick);
+// $body.on("click", "#nav-submit-story", navSubmitStoryClick);
+$navSubmitStory.on("click", navSubmitStoryClick);
 
 /** Show favorite stories on click on "favorites" */
 
