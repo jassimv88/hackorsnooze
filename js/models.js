@@ -86,16 +86,16 @@ class StoryList {
 // It updates local collections with the newly added story.
 // It returns the added story.
 
-  async addStory(user, {title, author, url}) {
+  async addStory(user, { title, author, url }) {
     const token = user.loginToken;
     const response = await axios({
       method: "POST",
       url: `${BASE_URL}/stories`,
-      data: {token, story: {title, author, url}},
+      data: { token, story: { title, author, url } },
     });
 
     const story = new Story(response.data.story);
-    // use unshift to add to beginning of array instead of at the end (push)
+    // use unshift instead of push to add to beginning of array
     this.stories.unshift(story);
     user.ownStories.unshift(story);
 
