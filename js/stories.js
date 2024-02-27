@@ -87,7 +87,7 @@ async function deleteStory(evt) {
   await storyList.removeStory(currentUser, storyId);
 
   // re-generate story list
-  await putUserStoriesOnPage();
+  putUserStoriesOnPage();
 }
 
 $ownStories.on("click", ".trash-can", deleteStory);
